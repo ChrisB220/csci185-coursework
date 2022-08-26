@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    margin: 0px;
+}
+header {
+    background-color: yellow;
+    padding: 40px;
+    margin: 0px;
+}
+
+section {
+    display: inline-block;
+    margin: 30px;
+    background-color: white;
+}
+
+.section a:hover{
+    background-color: black;
+    color: blue;
+}
+/* Your code here */
