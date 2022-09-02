@@ -6,16 +6,89 @@
 body {
     margin: 0px;
     font-family: Arial, sans-serif;
+    transition-property: opacity, left, top, height;
+    transition-duration: 3s, 5s;
 }
 header, section {
     padding: 20px;
+    text-align: center;
+}
+header {
+    background-color: #161c20;
+    color: white;
+    border-bottom: #2478A8 10px solid;
 }
 p, li {
     line-height: 1.5em;
 }
+p {
+    font-size: large;
+    padding-left: 20px;
+}
+h3, h2 {
+    padding: .5em;
+}
 
+#tutorials {
+    text-align: center;
+    padding: 0.5px;
+    background-color: #161c20;
+    color: white;
+    padding-bottom: 50px;
+}
+.tphotos {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.tphotos img {
+    width: 600px;
+    height: 300px;
+    margin-right: 1.3%;
+    border: #2A4494 1px solid;
+    margin-right: auto;
+    margin-left: auto;
+}
+section.inspiration {
+    text-align: center;
+    font-display: auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 20px;
+}
+a {
+    flex: 1;
+    background-color: #2478A8;
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+a:hover, a:focus {
+    background-color: #68B3DF;
+    color: white;
+    transition: background-color 2s, width 2s, height 2s;
+    width: 150px;
+    height: 150px;
+}
+#homework {
+    text-align: left;
+    background-color: white;
+    color: black;
+    font-size: larger;
+}
+#lectures {
+    text-align: left;
+    background-color: white;
+    color: black;
+}
 #inspiration {
-    background-color: #F0F0F0;
+    background-color: #161c20;
     padding-top: 40px;
     padding-bottom: 40px;
+    color: white;
+    text-align: center;
 }
