@@ -1,0 +1,40 @@
+body {
+    background-color: #F0F4EF;
+    margin: 0%;
+}
+
+header {
+    background-color: #b4cded;
+    margin: auto;
+    margin-top: 0;
+    width: auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 50px;
+}
+
+nav, a {
+    margin: auto;
+    width: auto;
+    padding: 30px;
+    text-align: center;
+    text-decoration: double;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+#images {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #344966;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    border: solid 1px black
+}
