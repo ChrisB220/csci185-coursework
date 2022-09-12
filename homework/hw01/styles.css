@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
+#about p {
+    width: 50%;
+    margin: auto;
+    margin-left: 75px;
+}
+
+h3 {
+    width: 50%;
+    margin: auto;
+    margin-left: 37px;
+    padding-top: 10px;
+}
+nav {
+    display: flex;
+    justify-content: right;
+    padding-left: 10px;
+    background-color: #378080;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+    text-decoration-style: solid;
+    font-size: large;
+}
+
+header {
+    background-color: #378080;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    font-family: fantasy;
+}
+
+#profile-pic {
+    border-radius: 50%;
+}
+
+#about h2 {
+    font-family: fantasy;
+    padding-bottom: 30px;
+    padding-top: 125px;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    width: 50%;
+    font-size: x-large;
+}
+
+#about p {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+#projects {
+    background-color: lightgray;
+    margin: 0%;
+}
+
+#projects h2 {
+    font-family: fantasy;
+    padding-bottom: 30px;
+    padding-top: 125px;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    width: 50%;
+    font-size: x-large;
+}
+
+.project-holder:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    float: left;
+    width: 200px;
+    margin-right: 200px;
+    padding: 150px;
+    padding-top: 0px;
+    padding-left: 350px;
+    padding-bottom: 100px;
+    padding-inline-end: 0%;
+    text-align: center;
+    align-items: center;
+}
+.card img {
+    width: 350px;
+    padding: 0px;
+}
+.card h3 {
+    width: 300px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.card p {
+    width: 350px;
+    text-align: left;
+    margin-left: 0%;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: .667fr .333fr;
+    column-gap: 40px;
+}
+
+#contact {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#contact-info .row {
+    display: grid;
+    grid-template-columns: 40px auto;
+    margin-bottom: 20px;
+}
+
+.row p {
+    margin: 0%;
+}
+
+form .row1 {
+    display: grid;
+    grid-template-columns: 40% auto;
+    column-gap: 15px;
+}
+
+form .row {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    background: rgb(238, 236, 236);
+    border: none;
+    border-radius: 4px;
+}
+
+#message {
+    width: 100%;
+    margin: 0%;
+}
+
+#submit {
+    background: #378080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+}
+
+footer p {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 80px;
+    margin: auto;
+    width: 100%;
+}
