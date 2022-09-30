@@ -1,0 +1,310 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #fff;
+}
+a, a:hover, a:visited, a:active { 
+    color: #fff;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**********/
+/* Layout */
+/**********/
+aside, footer, header, nav, section, article {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    overflow: hidden;
+    margin: 0px;
+    height: 100vh;
+    /* body tag is a grid */
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto 100px;
+}
+aside {
+    background-color: #000;
+    grid-column-start: 1;
+}
+header {
+    background: #111;
+    position: sticky;
+    top: 0px;
+}
+
+/* Uncomment to see borders:  */
+/* header, nav, article {
+    border: solid 5px teal;
+    padding: 10px;
+}
+main {
+    border: solid 5px hotpink;
+    padding: 10px;
+} */
+
+main {
+    background: #111;
+    grid-column-start: 2;
+    overflow-y: auto;
+    z-index: 3;
+}
+
+footer {
+    background: #222;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+/* .selected {
+    text-decoration: underline;
+    text-decoration-color: green;
+} */
+
+/***************************/
+/* Accessories & Florishes */
+/***************************/
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    min-height: 30px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+}
+
+/***************************/
+/* Part A: Left Navigation */
+/***************************/
+
+/* Your Code Here */
+
+#sidebar {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 10% 6% 6% 6%;
+    column-gap: 0px;
+    row-gap: 0px;
+    padding-left: 25px;
+}
+
+#home {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#Search {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+aside > #selected {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+/********************************/
+/* Part B: Header & Nav Styling */
+/********************************/
+
+/* Your Code Here */
+
+main > header {
+    display: grid;
+    grid-template-columns: 10% 10%;
+    grid-template-rows: 100%;
+    align-items: right;
+    justify-content: right;
+}
+
+header > a {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 7px 7px;
+}
+
+#upgrade {
+    border-radius: 2em;
+    border: solid grey 2px;
+    width: 120px;
+    align-items: right;
+    grid-column: 1;
+    color: grey;
+}
+#profile {
+    border-radius: 2em;
+    width: 120px;
+    grid-column: 2;
+    background-color: #222;
+    font-weight: bold;
+}
+
+main > nav {
+    border: 1px white solid;
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    grid-template-rows: 20%;
+    padding: 20px;
+}
+
+#Playlists {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#Albums {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#Artists {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+
+/*************************/
+/* Part C: Artists Panel */
+/*************************/
+
+/* Your Code Here.
+   For the desktop view, there should be 5 cards per row.
+*/
+
+#featured-content {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20%;
+    row-gap: 200px;
+    column-gap: 5px;
+}
+
+.artist-card {
+    border: white 1px solid;
+    width: 200px;
+    height: 300px;
+    background-color: #222;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+article img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+article h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 16px;
+}
+article p {
+    padding-top: 5px;
+    margin-top: 0%;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+#Taylor {
+    grid-column: 1;
+    grid-row: 1;
+}
+#Chance {
+    grid-column: 2;
+    grid-row: 1;
+}
+#BTS {
+    grid-column: 3;
+    grid-row: 1;
+}
+#Lizzo {
+    grid-column: 4;
+    grid-row: 1;
+}
+#Rihanna {
+    grid-column: 5;
+    grid-row: 1;
+}
+#Ariana {
+    grid-column: 1;
+    grid-row: 2;
+}
+#Billie {
+    grid-column: 2;
+    grid-row: 2;
+}
+#Beyoncé {
+    grid-column: 3;
+    grid-row: 2;
+}
+#Nas {
+    grid-column: 4;
+    grid-row: 2;
+}
+#Travis {
+    grid-column: 5;
+    grid-row: 2;
+}
+/**************************/
+/* Part D: Responsive UIs */
+/**************************/
+
+/* Your Code Here */
+
+@media screen and (max-width: 1000px) {
+    /* 
+        Tablet Display: 3 cards per row!
+    
+    */
+    #featured-content {
+        grid-template-columns: 20% 20% 20%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 175px;
+        column-gap: 75px;
+    }
+}
+@media screen and (max-width: 700px) {
+    /* Mobile Display 
+        * 2 cards per row
+        * The aside panel and "Upgrade" button should no longer be visible.
+        * There should only be a 1-column layout.
+    */
+    #featured-content {
+        grid-template-columns: 20% 20%;
+        grid-template-rows: none;
+        row-gap: 25px;
+        column-gap: 125px;
+    }
+    
+    #upgrade {
+        display: none;
+    }
+
+    aside h1, aside a, aside {
+        display: none;
+        margin: 0%;
+        padding: 0%;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
