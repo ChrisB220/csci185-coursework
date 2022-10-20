@@ -41,7 +41,7 @@ function draw() {
         c1.x = -200;
     }
 
-    if (c2.x < -100) {
+    if (c2.x < -200) {
         c2.x = 1800;
     }
     // draw the grid (optional -- feel free to remove this line):
