@@ -6,7 +6,7 @@ const c1 = {
     x: 100,
     y: 100,
     width: 200,
-    speed: 13,
+    speed: 10,
     color: 'hotpink'
 };
 
@@ -14,7 +14,7 @@ const c2 = {
     x: 1700,
     y: 300,
     width: 200,
-    speed: 10,
+    speed: 8,
     color: 'lightblue'
 };
 
@@ -37,7 +37,7 @@ function draw() {
     drawCar(c1.x, c1.y, c1.width, c1.color);
     drawCar(c2.x, c2.y, c2.width, c2.color);
 
-    if (c1.x > 1800) {
+    if (c1.x > 1900) {
         c1.x = -100;
     }
 
