@@ -92,3 +92,7 @@ a:hover, a:focus {
     color: white;
     text-align: center;
 }
+
+#homework > p {
+    text-decoration: underline;
+}
