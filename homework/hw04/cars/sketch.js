@@ -42,7 +42,7 @@ function draw() {
     }
 
     if (c2.x < -200) {
-        c2.x = 2400;
+        c2.x = 2600;
     }
     // draw the grid (optional -- feel free to remove this line):
     drawGrid(canvasWidth, canvasHeight);
