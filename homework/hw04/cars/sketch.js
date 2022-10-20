@@ -6,7 +6,7 @@ const c1 = {
     x: 100,
     y: 100,
     width: 200,
-    speed: 10,
+    speed: 9,
     color: 'hotpink'
 };
 
