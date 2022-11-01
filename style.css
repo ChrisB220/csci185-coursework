@@ -75,13 +75,13 @@ a:hover, a:focus {
     height: 150px;
 }
 #homework {
-    text-align: left;
+    text-align: center;
     background-color: white;
     color: black;
     font-size: larger;
 }
-#lectures {
-    text-align: left;
+#projects {
+    text-align: center;
     background-color: white;
     color: black;
 }
