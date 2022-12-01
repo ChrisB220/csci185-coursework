@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"sash.hoverBorder": "#daf5fa"
+		},
+		"peacock.color": "#ADE8F4"
+	}
+}
