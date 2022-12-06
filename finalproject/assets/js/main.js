@@ -20,14 +20,14 @@
 			xsmall:	'(max-width: 480px)'
 		});
 
-	// Play initial animations on page load.
+	// Text Animation on website load
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
 		});
 
-	// Header.
+	// Topbar header when scrolling down
 		if ($banner.length > 0
 		&&	$header.hasClass('alt')) {
 
@@ -42,7 +42,7 @@
 
 		}
 
-	// Menu.
+	// Menu pop up
 		var $menu = $('#menu');
 
 		$menu._locked = false;
@@ -143,3 +143,5 @@
 			});
 
 })(jQuery);
+
+

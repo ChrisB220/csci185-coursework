@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<audio autoplay>
+		<source src="assets/Bells.mp4" type="audio/mp4">
+	  Your browser does not support the audio element.
+	  </audio>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Christopher Bolivar</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="chilltown.html">Chilltown</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><i class="fas fa-snowflake" style="font-size:48px"></i></div>
+							<h2>Welcome</h2>
+							<p id="date">Todays date is <script> document.write(new Date().toLocaleDateString()); </script></p>
+							<p id="countdown"></p>
+							<script>
+								var countdownDate = new Date("Dec 25, 2022 00:00:00").getTime();
+								var x = setInterval(function() {
+								var present = new Date().getTime();
+								var days = Math.floor(present / (1000 * 60 * 60 * 24));
+								var hours = Math.floor((present % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+								var minutes = Math.floor((present % (1000 * 60 * 60)) / (1000 * 60));
+								var seconds = Math.floor((present % (1000 * 60)) / 1000);
+								// document.getElementById("date").innerHTML = "Todays date is " + present;
+
+								var distance = countdownDate - present;
+								var Cdays = Math.floor(distance / (1000 * 60 * 60 * 24));
+								var Chours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+								var Cminutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+								var Cseconds = Math.floor((distance % (1000 * 60)) / 1000);
+								document.getElementById("countdown").innerHTML = Cdays + " Days " + Chours + " Hours " + Cminutes + " Minutes and " + Cseconds + " Seconds " + " Until Christmas!";
+								if (distance < 0) {
+									clearInterval(x);
+									document.getElementById("countdown").innerHTML = "Merry Christmas!";
+								  }
+								}, 1000);
+								</script>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="https://oneport.unca.edu/unca/Welcome" class="image"><img src="images/download.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">UNCA OnePort</h2>
+										<p>Access everything you need from your student profile, student email, and classes. Log into Moodle to view your individual classes, assignments, important dates, and grades.</p>
+										<a href="https://oneport.unca.edu/unca/Welcome" class="special">Visit Site</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="https://drive.google.com/drive/u/3/my-drive" class="image"><img src="images/hh_drive_96dp.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Google Drive</h2>
+										<p>The place where a majority of your assignments, projects, and assets are. An essential part of online University work and without it, your computer would be filled with pdfs.</p>
+										<a href="https://drive.google.com/drive/u/3/my-drive" class="special">Visit Site</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="https://github.com/ChrisB220/csci185-coursework" class="image"><img src="images/logomark-black@2x.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">GitHub Repository</h2>
+										<p>Our code repository that contains previous assignments and homework from a CS class. Currently it links to CSCI-185 coursework but this will be updated to link to current class.</p>
+										<a href="https://github.com/ChrisB220/csci185-coursework" class="special">Visit Site</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Recent Projects</h2>
+									<p>These are some projects that were worked on or created during the 2022 Fall Semester.</p>
+									<section class="features">
+										<article>
+											<a href="https://chrisb220.github.io/csci185-coursework/" class="image"><img src="images/Homepage.png" alt="" /></a>
+											<h3 class="major">Original Homepage</h3>
+											<p>The first original website we made and one of the more important ones of the course.</p>
+											<a href="https://chrisb220.github.io/csci185-coursework/" class="special">Visit Site</a>
+										</article>
+										<article>
+											<a href="https://chrisb220.github.io/csci185-coursework/projects/project01/index.html" class="image"><img src="images/Project1.png" alt="" /></a>
+											<h3 class="major">CSCI-185 Project 1</h3>
+											<p>A personal favorite, this website was a project that led to a little celebration of the holiday season.</p>
+											<a href="https://chrisb220.github.io/csci185-coursework/projects/project01/index.html" class="special">Visit Site</a>
+										</article>
+									</section>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Personal Info</h2>
+							<p>Just incase we need to find or verify our own information quickly. </p>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									University of North Carolina at Asheville<br />
+									900 Founders Drive #2894<br />
+									Asheville, NC 28804
+								</li>
+								<li class="icon solid fa-phone">(980) 229 3686</li>
+								<li class="icon solid fa-envelope"><a href="https://mail.google.com/mail/u/3/#inbox">cbolivar@unca.edu</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>By: Christopher Bolivar</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
